@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+body{
+    font-family: "微软雅黑";
+    background-image: linear-gradient(to right,blue,blueviolet);
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: white;
+}
+
+.content{
+    height: 40rem;
+    width: 85%;
+    background-color: mediumslateblue;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: .5rem;
+    /* box-shadow: 5px 5px 1px #888888; */
+}
+
+.content h1{
+    margin-top:3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.name,.psd,.checkCode{
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.content input{
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+    border-radius: .5rem;
+    line-height: 2.76rem;
+    
+}
+
+.btn{
+    width: 50%;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: #2ecc71;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: .1rem;
+    margin-left: 50%;
+    /* margin-top: 10%; */
+    transform: translate(-50%);
+}
+
+.error{
+    position: absolute;
+    top: 3rem;
+    left: 33%;
+    color: red;
+}
+
+.checkCodeBtn{
+    width: 25%;
+    height: 2rem;
+    margin-left: 35%;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    background-color: #2ecc71;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: .1rem;
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "微软雅黑";
+}
+
+.img{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.img img{
+    width: 100%;
+    height: 15rem;
+}
+
+.submit{
+    width: 10rem;
+}
+
+#othersComment{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.comment{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: #ccc dotted .1rem;
+}
+
+.commentLeft{
+   width: 5rem;
+   height: 7rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.commentText{
+    width: 75%;
+    color: purple;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    word-break: break-all;
+    font-size: .5rem; 
+    /* margin-top: -1.5rem;    */
+}
+
+.commentLeft img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.commentLeft p{
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+
+.goBack{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10rem;
+    background-color: black;
+    opacity: .5;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+.goBack img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: .8rem;
+}
+
+.des{
+    position: absolute;
+    top:13rem;
+    left: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.fullPic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: none;
+    z-index: 100;
+    background-color: black;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.starContainer{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.star{
+    list-style-type: none;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/star.jpg);
+    background-size: 100% 200%;
+    background-position: 0% 100%;
+}
+
+.light{
+    background-position: 0% 0%;
+}
+
+.clickStar{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 11%;
+}
+
+.clickStar::before{
+    content: '点击评分：';
+    font-size: 1.5rem;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>首页</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<script src="../common/jquery-3.4.1.min.js"></script>
+	<script src="../common/bootstrap/css/bootstrap.css"></script>
+	<script src="../common/bootstrap/css/bootstrap-theme.min.css"></script>
+	<script src="../common/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/index.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header_L"><a href="#"><img src="../img/fanhuijiantou.png" alt="返回"></a></div>
+		<div class="header_M"><input type="text" placeholder="请输入城市/景点/游玩主题" class="search_img" minlength="3"
+				maxlength="10"></div>
+		<div class="header_R" id="showHome"><img src="../img/zhuye.png" alt="主页"></div>
+	</div>
+	<div class="clear"></div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper slider">
+			<div class="swiper-slide"><img src="../img/slide1.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="../img/slide2.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="../img/slide3.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="../img/slide4.jpg" alt=""></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+
+	<div class="hot">
+		<h5>当季热门目的地:</h5>
+		<div class="hotTop">
+		</div>
+		<div class="hotBottom">
+		</div>
+	</div>
+
+	<div class="fenlei">
+		<div class="fenleiTop">
+			<div class="fenleiTop1">
+				<div><img src="../img/zhutiyou.png" alt=""></div>
+				<p style="text-align: center;">主题游</p>
+			</div>
+			<div class="fenleiTop2">
+				<div><img src="../img/tubudengshang.png" alt=""></div>
+				<p style="text-align: center;">徒步登山</p>
+			</div>
+			<div class="fenleiTop3">
+				<div><img src="../img/shenduyou.png" alt=""></div>
+				<p style="text-align: center;">深度游</p>
+			</div>
+		</div>
+		<div class="fenleiBottom" style="margin-top: .5rem">
+			<div class="fenleiTop1">
+				<div><img src="../img/qinziyou.png" alt=""></div>
+				<p style="text-align: center;">亲子游</p>
+			</div>
+			<div class="fenleiTop2">
+				<div><img src="../img/qianshui.png" alt=""></div>
+				<p style="text-align: center;">潜水</p>
+			</div>
+			<div class="fenleiTop3">
+				<div><img src="../img/gaokongwanle.png" alt=""></div>
+				<p style="text-align: center;">高空玩乐</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="jump" id="jump">
+		<div class="jump1" id="jump1">
+			<a style="color:black;">热销推荐</a>
+		</div>
+		<div class="jump2" id="jump2">
+			<a style="color:black;">周末去哪儿</a>
+		</div>
+	</div>
+
+	<div class="hotSale">
+		<h5 id="hotSaleT" name="hotSaleT" style="font-size: 1.6rem;color: #212121;margin-top: .2rem">热销推荐</h5>
+	</div>
+	<div style="clear: both;"></div>
+	<h5 style="font-size: 1.6rem;color: #212121;margin-top: .2rem;margin-left: 2%;" id="weekendtitle">周末去哪儿</h5>
+	<div class="weekend" id="weekend" name="weekend">
+		<a href="#">
+			<div class="gotoBtn"><img src="../img/gotobtn.png" alt=""></div>
+		</a>
+
+		<div class="home" id="home">
+			<div class="res">
+				<a href="../html/reg.html">注册</a>
+			</div>
+			<div class="logIn">
+				<a href="../html/login.html">登陆</a>
+			</div>
+		</div>
+</body>
+
+</html>
+
+<script>
+
+
+	var swiper = new Swiper('.swiper-container', {
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+
+</script>

@@ -11,6 +11,14 @@ $(function () {
         $('#home').toggle(200);
     })
 
+    $('.gotoBtn').click(function(){
+        scrollToTop(150);
+    })
+	
+	 function scrollToTop(speed){
+        $('html,body').animate({ scrollTop: 0 }, speed);
+    }
+	
     $(document).click(function () {
         $('#home').fadeOut(200);
     })

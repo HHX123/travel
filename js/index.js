@@ -12,7 +12,7 @@ $(function () {
     })
 
     $('.gotoBtn').click(function(){
-        scrollToTop(150);
+        scrollToTop(300);
     })
 	
 	 function scrollToTop(speed){

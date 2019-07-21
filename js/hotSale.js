@@ -45,8 +45,8 @@ $(function () {
           <div class="swiper-slide"><img src="../img/hotSale_3.jpg" alt="" class="innerPic"></div>
           <div class="swiper-slide"><img src="../img/hotSale_4.jpg" alt="" class="innerPic"></div>
         </div>
-      </div>
-      <div class="swiper-pagination" style="margin-bottom:55%"></div>`
+      </div>`
+      //<div class="swiper-pagination" style="margin-bottom:55%"></div>
         $('#fullPic').append(text);
         newSwiper();
         $('.innerPic').click(function (e) {
